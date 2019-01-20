@@ -9,7 +9,7 @@ $(function(){
 		$('#contact').addClass('active');
 		break;
 	case 'View Products':
-		$('#listproduct').addClass('active');
+		$('#listproducts').addClass('active');
 		break;
 	default:
 		$('#home').addClass('active');

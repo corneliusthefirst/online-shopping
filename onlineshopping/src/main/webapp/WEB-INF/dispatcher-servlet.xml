@@ -10,7 +10,11 @@
    http://www.springframework.org/schema/mvc
    http://www.springframework.org/schema/mvc/spring-mvc.xsd
    ">
-      <context:component-scan base-package="cornelius.jugal.onlineshopping.controller"></context:component-scan>
+      <context:component-scan base-package="cornelius.jugal.onlineshopping.controller"/>
+      <!-- add this so that repository get available for frontend-->
+      <context:component-scan base-package="cornelius.jugal.shoppingbackend.daoimpl"/>
+      
+      
        <!-- this resolve our page to the pageController for access -->
       <bean id="viewResolver" class = "org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value = "WEB-INF/views/"/> 

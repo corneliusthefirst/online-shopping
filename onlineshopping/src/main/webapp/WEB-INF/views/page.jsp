@@ -31,7 +31,7 @@
 
 <!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
-<link href="${css}/bootstrap-cerelum-theme.css" rel="stylesheet">
+<link href="${css}/bootstrap-cerulum-theme.css" rel="stylesheet">
 
 </head>
 
@@ -58,6 +58,12 @@
 			<c:if test="${userClickContact == true}">
 				<%@include file="contact.jsp"%>
 			</c:if>
+			
+		   <!--  Load this only when user clicks All products or category product -->
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
+				<%@include file="listProducts.jsp"%>
+			</c:if>
+			
 
 		</div>
 		<!-- Footer comes here -->

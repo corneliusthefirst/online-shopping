@@ -16,6 +16,12 @@
   </properties>
   
   <dependencies>
+  <!-- Link to backend project-->
+     <dependency>
+             <groupId>cornelius.jugal</groupId>
+             <artifactId>shoppingbackend</artifactId>
+             <version>0.0.1-SNAPSHOT</version>
+     </dependency>
 
         <!--  JAVA EE API -->
       
